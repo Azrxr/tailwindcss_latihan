@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>belajar tailwind</title>
+    <link href="./src/style.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+        * {
+            border: 1px solid red;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 class="text-6xl">belajar tailwind</h1>
+    <h1 class="text-3xl m-2">belajar tailwind</h1>
+
+    <section class="mb-10 border border-red-500">
+        <h2 class="text-2xl">Spacing</h2>
+        <div class="m-3 border border-red-500">margin</div>
+        <div class="mx-3 border border-red-500">margin kanan kiri</div>
+        <div class="my-3 border-red-500">margin atas bawah</div>
+        <!-- <div class="-m-4 border-red-500">margin minus</div> -->
+        <div class="p-3 border-red-500">padding</div>
+    </section>
+
+    <section class="mb-10">
+        <h2>Sizing</h2>
+        <div class="w-1/2">lebar 50%</div>
+    </section>
 </body>
+
 </html>
