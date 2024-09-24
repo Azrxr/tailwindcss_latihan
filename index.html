@@ -6,29 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>belajar tailwind</title>
     <link href="./src/style.css" rel="stylesheet">
-    <style type="text/tailwindcss">
-        * {
-            border: 1px solid red;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <!-- inisialisasi jarak sendiri -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extends: {
+                    spacing: {
+                        13: '3.25rem',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins'],
+
+                    },
+                }
+
+            }
         }
-    </style>
+    </script>
 </head>
 
 <body>
-    <h1 class="text-3xl m-2">belajar tailwind</h1>
-
-    <section class="mb-10 border border-red-500">
-        <h2 class="text-2xl">Spacing</h2>
-        <div class="m-3 border border-red-500">margin</div>
-        <div class="mx-3 border border-red-500">margin kanan kiri</div>
-        <div class="my-3 border-red-500">margin atas bawah</div>
-        <!-- <div class="-m-4 border-red-500">margin minus</div> -->
-        <div class="p-3 border-red-500">padding</div>
+    <h1 class="text-4xl font-bold text-center my-10">Belajar Tailwind CSS</h1>
+    
+    <section class="mb-10 border bg-red-200">
+        <h2 class="text-3xl mb-10 text-center">Spacing</h2>
+        <h3 class="m-5 bg-slate-200 text-center">margin</h3>
+        <h3 class="p-3 bg-green-300 text-center">padding</h3>
+        <h3 class="-mt-3 p-3 max-w-32 bg-orange-300">margin minus</h3>
     </section>
 
-    <section class="mb-10">
-        <h2>Sizing</h2>
-        <div class="w-1/2">lebar 50%</div>
+    <section class="mb-10 bg-slate-200">
+        <h3 class="text-3xl mb-10 text-center">Sizing</h3>
+        <div class="w-32 h-32 ms-3 bg-slate-400">kotak</div>
+        <!-- <div class="max-w-xs min-h-screen">kotak 2</div> -->
+         <div class="w-1/2 h-32 bg-orange-400" >kotak 1/2</div>
     </section>
+
+    <section class="mb-3 h-40 mx-12
+    bg-gradient-to-r from-indigo-300 via-orange-300 to-red-300 ">
+        <h3 class="text-3xl text-center">Color gardiens </h3>
+        <h4 class="text-center">kiri-tengan-kanan</h4>
+        <h3 class="text-center font-extrabold text-6xl">
+            <span class=
+            "bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                text Color
+            </span>
+        </h3>
+    </section>
+    <section class="mb-3 h-40 mx-12
+    bg-gradient-to-br from-indigo-300 via-orange-300 to-red-300 ">
+        <h3 class="text-3xl text-center">Color gardiens </h3>
+        <h4 class="text-center">kiri atas-tengan-kanan bawah</h4>
+        <h3 class="text-center font-extrabold text-6xl"></h3>
+            <span class=
+            "bg-gradient-to-br from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                text Color
+            </span>
+        </h3>
+    </section>
+    <section class="mb-3 h-40 mx-12
+    bg-gradient-to-tr from-indigo-300 via-orange-300 to-red-300 ">
+        <h3 class="text-3xl text-center">Color gardiens </h3>
+        <h4 class="text-center">kiri bawah-tengan-kanan atas</h4>
+        <h3 class="text-center font-extrabold text-6xl"></h3>
+            <span class=
+            "bg-gradient-to-tr from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                text Color
+            </span>
+        </h3>
+    </section>
+    
+
+    <section class="mb-96 font-poppins max-w-3xl mx-auto">
+        <h2 class="text-4xl mb-4 my-3 font-semibold text-center">
+            belajar menegenai typografi pada tailwind
+        </h2>
+        <div class="mb-2 font-extralight text-sm">
+            By <a href="#" class="text-blue-600 font-semibold">azror</a>, 22 september 2024
+        </div>
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt in veritatis ex. Hic excepturi voluptate
+            perferendis nisi sapiente dolore animi ipsam ex optio, laboriosam, repudiandae molestiae reiciendis possimus
+            fugit ab aspernatur eos quam <a href="#" class="underline font-semibold text-blue-600">magnam</a> eaque neque nihil dicta! Nobis eaque repellendus quaerat inventore
+            nesciunt at provident, ipsum deserunt officia quae!</p>
+
+        <blockquote class="mb-4 italic font-thin text-xl">
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam consequuntur ut, vel voluptatem
+            itaque ipsa
+            nesciunt quod autem! Saepe officiis aut consectetur ea nesciunt sapiente assumenda blanditiis impedit magnam
+            laborum."
+        </blockquote>
+        <p class="mb-4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, ipsam officiis modi pariatur
+            quae saepe
+            dolorem sed dolore nostrum excepturi architecto molestiae ad deserunt vel expedita suscipit hic? Alias,
+            expedita.</p>
+    </section>
+
 </body>
 
 </html>
