@@ -32,7 +32,7 @@
 
 <body>
     <h1 class="text-4xl font-bold text-center my-10">Belajar Tailwind CSS</h1>
-    
+
     <section class="mb-10 border bg-red-200">
         <h2 class="text-3xl mb-10 text-center">Spacing</h2>
         <h3 class="m-5 bg-slate-200 text-center">margin</h3>
@@ -44,7 +44,7 @@
         <h3 class="text-3xl mb-10 text-center">Sizing</h3>
         <div class="w-32 h-32 ms-3 bg-slate-400">kotak</div>
         <!-- <div class="max-w-xs min-h-screen">kotak 2</div> -->
-         <div class="w-1/2 h-32 bg-orange-400" >kotak 1/2</div>
+        <div class="w-1/2 h-32 bg-orange-400">kotak 1/2</div>
     </section>
 
     <section class="mb-3 h-40 mx-12
@@ -52,21 +52,19 @@
         <h3 class="text-3xl text-center">Color gardiens </h3>
         <h4 class="text-center">kiri-tengan-kanan</h4>
         <h3 class="text-center font-extrabold text-6xl">
-            <span class=
-            "bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <span class="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 text Color
             </span>
         </h3>
     </section>
-    <section class="mb-3 h-40 mx-12
+    <section class="mb-3 h-40 max-w-xl mx-auto
     bg-gradient-to-br from-indigo-300 via-orange-300 to-red-300 ">
         <h3 class="text-3xl text-center">Color gardiens </h3>
         <h4 class="text-center">kiri atas-tengan-kanan bawah</h4>
         <h3 class="text-center font-extrabold text-6xl"></h3>
-            <span class=
-            "bg-gradient-to-br from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                text Color
-            </span>
+        <span class="bg-gradient-to-br from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            text Color
+        </span>
         </h3>
     </section>
     <section class="mb-3 h-40 mx-12
@@ -74,15 +72,14 @@
         <h3 class="text-3xl text-center">Color gardiens </h3>
         <h4 class="text-center">kiri bawah-tengan-kanan atas</h4>
         <h3 class="text-center font-extrabold text-6xl"></h3>
-            <span class=
-            "bg-gradient-to-tr from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                text Color
-            </span>
+        <span class="bg-gradient-to-tr from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            text Color
+        </span>
         </h3>
     </section>
-    
 
-    <section class="mb-96 font-poppins max-w-3xl mx-auto">
+
+    <section class="mb-10 font-poppins max-w-3xl mx-auto">
         <h2 class="text-4xl mb-4 my-3 font-semibold text-center">
             belajar menegenai typografi pada tailwind
         </h2>
@@ -92,7 +89,8 @@
         <p class="mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt in veritatis ex. Hic excepturi voluptate
             perferendis nisi sapiente dolore animi ipsam ex optio, laboriosam, repudiandae molestiae reiciendis possimus
-            fugit ab aspernatur eos quam <a href="#" class="underline font-semibold text-blue-600">magnam</a> eaque neque nihil dicta! Nobis eaque repellendus quaerat inventore
+            fugit ab aspernatur eos quam <a href="#" class="underline font-semibold text-blue-600">magnam</a> eaque
+            neque nihil dicta! Nobis eaque repellendus quaerat inventore
             nesciunt at provident, ipsum deserunt officia quae!</p>
 
         <blockquote class="mb-4 italic font-thin text-xl">
@@ -107,6 +105,36 @@
             dolorem sed dolore nostrum excepturi architecto molestiae ad deserunt vel expedita suscipit hic? Alias,
             expedita.</p>
     </section>
+    <!-- membuat ukuran yang tidak disediakan atau ukuran sembarang -->
+    <div class="mb-10 max-w-xl h-96 mx-auto
+     mt-[42-px] bg-[#bada55] overflow-y-scroll bg-fixed" style="background-image: url('./src/img/image.png');">
+        <!-- ambil foto random https://source.unsplash.com/1000x600?computer -->
+        <p class="p-5 text-2xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo a quae accusantium aliquam
+            quasi beatae, quidem
+            itaque? Odio nihil, distinctio necessitatibus harum eligendi ex labore iste! Beatae praesentium, saepe
+            blanditiis pariatur fugiat dignissimos sequi totam est consectetur aut accusantium sint tempore, distinctio
+            voluptates quae ipsum ab architecto esse nisi minima, at corporis reiciendis quisquam? Libero, quisquam.
+            Expedita nobis, quas doloribus nisi eveniet quos molestias at nihil rem illum aperiam quidem ex, accusantium
+            sit libero dicta adipisci officiis? Quae excepturi, alias nulla iusto animi nihil eaque necessitatibus magni
+            voluptatibus eius iste quia fuga, optio officiis nostrum cumque dolorum totam, aliquam nisi.</p>
+    </div>
+
+    <div class="mt-32 mb-10 max-w-xl mx-auto h-96
+    bg-slate-300 bg-cover bg-center rounded-tl-full rounded-br-full
+    border-purple-900 shadow-xl shadow-purple-600" style="background-image: url('./src/img/image4.png');">
+    </div>
+
+
+    <div class="mt-32 mb-10 max-w-xl mx-auto h-96 
+    bg-slate-300 h-96 bg-contain bg-center rounded-2xl
+    border-slate-300 shadow-xl shadow-orange-500 overflow-hidden border-8
+    flex" style="background-image: url('./src/img/image5.png');">
+        <!-- blur-sm hover:blur-none -->
+        <div class="w-[200px] h-[200px] bg-white/30
+m-auto backdrop-blur-md rounded-full">
+
+        </div>
+    </div>
 
 </body>
 
